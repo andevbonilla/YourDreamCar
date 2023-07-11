@@ -64,3 +64,33 @@
   transition: all 1000ms;
   transform: scale(900);
 }
+
+.default-opacity{
+  opacity: 0;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  transform: scale(0);
+}
+
+.menu-not-opened{
+  display: none;
+}
+
+.menu-opened{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

@@ -30,7 +30,7 @@ export default function Home() {
            <Service name='Window Tinting' desc={TextWrapService} img={'/window-tinting.png'} />
            <Service name='Paint Protection Film (PPF)' desc={TextWrapService} img={'/PPF.png'} />
       </section>
-      <section className='flex flex-col items-center text-center pb-8'>
+      <section className='flex flex-col items-center text-center pb-8 z-10'>
            <h2 className='font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8'>Where find Us?</h2>
            <PreMap />
       </section>
