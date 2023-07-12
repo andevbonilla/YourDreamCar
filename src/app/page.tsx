@@ -18,14 +18,14 @@ export default function Home() {
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl`}>
       <section className="bg-image h-screen mb-16"></section>
       <section className='md:px-32 md:pb-16 flex flex-col items-center text-center px-8 pb-8'>
-          <h2 className={`font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8`}>About us</h2>
+          <h2 className={`md:pb-12 font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8`}>About us</h2>
           <About />
       </section>
       <section className='md:px-32 md:pb-16 flex flex-col items-center text-center px-8 pb-8'>
         
-           <h2 className={`font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8`}>Services</h2>
+           <h2 className={`md:pb-12 font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8`}>Services</h2>
            
-           <Service name='Wrapping Service' desc={TextWrapService} img={'/wraping-mustang-min.png'} />
+           <Service name='Wrapping Service' desc={TextWrapService} img={'/wrapping-service-img-min.png'} />
 
            <Service name='Window Tinting' desc={TextWrapService} img={'/window-tinting-min.png'} />
 
@@ -33,11 +33,11 @@ export default function Home() {
 
       </section>
       <section className='md:pb-16 flex flex-col items-center text-center pb-8'>
-           <h2 className={`font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8`}>Where find Us?</h2>
+           <h2 className={`md:pb-12 font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8`}>Where find Us?</h2>
            <PreMap />
       </section>
       <footer className='md:px-32 md:pb-16 flex flex-col px-8 pb-8'>
-        <h2 className={`text-center font-bold text-2xl pb-10 underline decoration-wavy decoration-green-400 underline-offset-8`}>Social Media</h2>
+        <h2 className={`md:pb-12 text-center font-bold text-2xl pb-10 underline decoration-wavy decoration-green-400 underline-offset-8`}>Social Media</h2>
         <Footer />
       </footer>
     </main>

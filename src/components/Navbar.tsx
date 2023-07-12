@@ -69,7 +69,7 @@ export const Navbar = () => {
                           </Link>
                           <Link onClick={closeMenu} 
                                 className={`text-white pb-4 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
-                                href={'/personalize-yourdreamcar'}>
+                                href={'/personalize-yourdreamcar-online'}>
                                 Online Personalization
                           </Link>
                         </div>

@@ -10,14 +10,14 @@ interface Props {
 
 export const Service = ({name, desc, img}: Props) => {
   return (
-    <div className='flex flex-col justify-between pb-8 text-start md:flex-row'>
-        <Image className='pb-4 md:mr-6 md:pb-0'
+    <div className='flex flex-col justify-between items-center pb-8 text-start md:flex-row md:items-start'>
+        <Image className='pb-12 md:mr-6 md:pb-0 h-96'
                src={img} 
                alt='image of the service' 
                width={400} 
                height={300} />
 
-        <div className='md:flex md:flex-col md:justify-between md:py-4'>
+        <div className='md:flex md:flex-col md:justify-between h-96'>
 
           <div>
               <h3 className='pb-3 text-xl font-bold'>{name}</h3>
