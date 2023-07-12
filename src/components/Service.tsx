@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 interface Props {
@@ -17,7 +18,10 @@ export const Service = ({name, desc, img}: Props) => {
             {desc}
           </p>
           <div className='flex flex-col'>
-            <button className='mt-3 bg-transparent text-green-400 border-green-400 px-4 py-3 border-solid border-2'>Read more</button>
+            <Link href={`/${name.replace(' ', '-').toLowerCase()}`} 
+                  className='mt-3 bg-transparent text-green-400 border-green-400 px-4 py-3 border-solid border-2'>
+                  Read more
+            </Link>
             <button className='mt-3 bg-green-400 text-white border-none px-4 py-3'>Schedule your service</button>
           </div>
         </div>

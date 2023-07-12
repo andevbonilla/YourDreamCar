@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import { underlineClass } from '@/texts'
 
 export const Navbar = () => {
 
@@ -57,9 +58,21 @@ export const Navbar = () => {
         navMenu && <div className='fixed h-full w-full bg-black flex justify-center items-center z-40'>
                         <div className='flex flex-col text-center'>
                           <FontAwesomeIcon className='pb-4' onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
-                          <Link onClick={closeMenu} className='text-white pb-4 font-bold text-xl' href={'/'}>Home</Link>
-                          <Link onClick={closeMenu} className='text-white pb-4 font-bold text-xl' href={'/blog'}>Blog</Link>
-                          <Link onClick={closeMenu} className='text-white pb-4 font-bold text-xl' href={'/personalize-yourdreamcar'}>Online Personalization</Link>
+                          <Link onClick={closeMenu} 
+                                className={`text-white pb-4 font-bold text-xl ${underlineClass}`} 
+                                href={'/'}>
+                                Home
+                          </Link>
+                          <Link onClick={closeMenu} 
+                                className={`text-white pb-4 font-bold text-xl ${underlineClass}`} 
+                                href={'/blog'}>
+                                Blog
+                          </Link>
+                          <Link onClick={closeMenu} 
+                                className={`text-white pb-4 font-bold text-xl ${underlineClass}`} 
+                                href={'/personalize-yourdreamcar'}>
+                                Online Personalization
+                          </Link>
                         </div>
                    </div>
       }
