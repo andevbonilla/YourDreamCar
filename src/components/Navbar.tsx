@@ -36,8 +36,8 @@ export const Navbar = () => {
     <>
       
       {(!bugattiAnimation && !navMenu) && 
-                            <nav className='fixed w-full z-40'>
-                                <div className='flex z-10 justify-between items-center p-8 bg-gradient-to-b from-black to-transparent w-full'>
+                            <nav className='fixed w-full bg-gradient-to-b from-black to-transparent z-40'>
+                                <div className='md:px-32 flex z-10 justify-between items-center p-8 w-full'>
                                        <Link href={'/'}><h1 className='text-2xl font-bold text-white'>YourDreamCar</h1></Link>
                                        <FontAwesomeIcon className='cursor-pointer' onClick={openMenu} icon={faBarsStaggered} size='2x' color='white'/>
                                 </div>

@@ -15,7 +15,7 @@ const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 
 export default function Home() {
   return (
-    <main className={`${josefin.className} bg-black text-white text-opacity-85`}>
+    <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl`}>
       <section className="bg-image h-screen mb-16"></section>
       <section className='md:px-32 md:pb-16 flex flex-col items-center text-center px-8 pb-8'>
           <h2 className={`font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8`}>About us</h2>
