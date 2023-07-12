@@ -21,12 +21,12 @@ export const Navbar = () => {
       setTimeout(() => {
         bugattiImg.current.className = 'zoom-two'
         setTimeout(() => {
+          setNavMenu(true)
           setBugattiAnimation(false);
           bugattiImg.current.className = 'img-bugatti';
-          setNavMenu(true)
         }, 801);
       }, 1000);
-    }, 400);
+    }, 200);
   }
 
   const closeMenu = () => {
@@ -48,7 +48,7 @@ export const Navbar = () => {
       {
         bugattiAnimation && <div className='fixed h-full w-full z-40'>
                                <img className={'img-bugatti'}
-                                    src='/bugatti-divo-removebg-preview.png' 
+                                    src='/bugatti-divo-min.png' 
                                     alt='bugatti image'
                                     ref={bugattiImg}
                                 />

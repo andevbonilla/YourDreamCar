@@ -1,7 +1,6 @@
-export const TextWrapService = `At our company, we offer professional wrapping services 
-                                to transform the look of your products or vehicles. Our skilled team 
-                                applies specially designed vinyl material, offering customization, 
-                                protection, and easy removal. Choose us for top-quality 
-                                wrapping that stands out and lasts.`
+export const TextWrapService = `At YourDreamCar, we are passionate about giving 
+                                you the opportunity to customize your car with the color and style of your dreams. 
+                                Our team of wrap experts is ready to bring your boldest and most creative ideas to life, 
+                                using the highest quality vinyls and precise installation techniques, making #YourDreamCar.`
                                 
 export const underlineClass = 'underline decoration-wavy decoration-green-400 underline-offset-8'

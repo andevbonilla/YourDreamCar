@@ -26,11 +26,11 @@ export default function Home() {
         
            <h2 className={`font-bold text-2xl pb-6 ${underlineClass}`}>Services</h2>
            
-           <Service name='Wrapping Service' desc={TextWrapService} img={'/wraping-mustang.png'} />
+           <Service name='Wrapping Service' desc={TextWrapService} img={'/wraping-mustang-min.png'} />
 
-           <Service name='Window Tinting' desc={TextWrapService} img={'/window-tinting.png'} />
+           <Service name='Window Tinting' desc={TextWrapService} img={'/window-tinting-min.png'} />
 
-           <Service name='Paint Protection Film' desc={TextWrapService} img={'/PPF.png'} />
+           <Service name='Paint Protection Film' desc={TextWrapService} img={'/PPF-min.png'} />
 
       </section>
       <section className='flex flex-col items-center text-center pb-8'>

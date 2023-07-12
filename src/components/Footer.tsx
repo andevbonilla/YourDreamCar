@@ -8,10 +8,18 @@ export const Footer = () => {
   return (
     <>
       <div className='flex justify-around'>
-        <FontAwesomeIcon icon={faInstagram} size='2x' color='white'/>
-        <FontAwesomeIcon icon={faFacebook} size='2x' color='white'/>
-        <FontAwesomeIcon icon={faWhatsapp} size='2x' color='white'/>
-        <FontAwesomeIcon icon={faTiktok} size='2x' color='white'/>
+        <a href='https://www.instagram.com/yourdreamcar.ca/' target='_blank' rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} size='2x' color='white'/>
+        </a>
+        <a href='https://www.instagram.com/yourdreamcar.ca/' target='_blank' rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFacebook} size='2x' color='white'/>
+        </a>
+        <a href='https://www.instagram.com/yourdreamcar.ca/' target='_blank' rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faWhatsapp} size='2x' color='white'/>
+        </a>
+        <a href='https://www.instagram.com/yourdreamcar.ca/' target='_blank' rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faTiktok} size='2x' color='white'/>
+        </a>
       </div>
       <div className='flex flex-col justify-start mt-8'>
         <div className='flex flex-col mb-3'>
