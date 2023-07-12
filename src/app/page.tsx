@@ -3,7 +3,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 // components imports
-import { Navbar } from '@/components/Navbar'
 import { About } from '@/components/About'
 import { Service } from '@/components/Service'
 import { TextWrapService, underlineClass } from '@/texts'

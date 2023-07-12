@@ -3,4 +3,4 @@ export const TextWrapService = `At YourDreamCar, we are passionate about giving
                                 Our team of wrap experts is ready to bring your boldest and most creative ideas to life, 
                                 using the highest quality vinyls and precise installation techniques, making #YourDreamCar.`
                                 
-export const underlineClass = 'underline decoration-wavy decoration-green-400 underline-offset-8'
+export const underlineClass = 'underline decoration-wavy decoration-green-400 underline-offset-8' 

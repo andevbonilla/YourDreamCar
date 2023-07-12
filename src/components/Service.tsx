@@ -11,7 +11,11 @@ interface Props {
 export const Service = ({name, desc, img}: Props) => {
   return (
     <div className='flex flex-col justify-between pb-6 text-start'>
-        <Image className='pb-4' src={img} alt='image of the service' width={400} height={300} />
+        <Image className='pb-4'
+               src={img} 
+               alt='image of the service' 
+               width={400} 
+               height={300} />
         <div>
           <h3 className='pb-3 text-xl font-bold'>{name}</h3>
           <p className='pb-3 text-justify'>
