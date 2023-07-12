@@ -6,56 +6,64 @@ import Link from 'next/link'
 
 export const Navbar = () => {
 
-  const [menuState, setMenuState] = useState(false)
-  const imgBugatti:any = useRef(null);
-  const menuOpened:any = useRef(null);
-  const navbar:any = useRef(null);
+  const [bugattiAnimation, setBugattiAnimation] = useState(false)
+  const [navMenu, setNavMenu] = useState(false)
+
+  const bugattiImg:any = useRef(null)
+
 
   const openMenu = () => {
-    if (menuState === true) {
-      return;
-    }
-    imgBugatti.current.className = 'change-opacity'
-    setMenuState(true)
+    if (bugattiAnimation) return;
+    setBugattiAnimation(true);
     setTimeout(() => {
-      imgBugatti.current.className = 'zoom-one'
-    }, 500);  
-    setTimeout(() => {
-      imgBugatti.current.className = 'zoom-two'
+      bugattiImg.current.className = 'zoom-one'
       setTimeout(() => {
-        menuOpened.current.className = 'menu-opened'
-        imgBugatti.current.className = 'default-opacity'
-        navbar.current.className = 'hidden z-10 justify-between items-center p-8 bg-gradient-to-b from-black to-transparent w-full'
-      }, 1001);     
-    }, 1500);  
+        bugattiImg.current.className = 'zoom-two'
+        setTimeout(() => {
+          setBugattiAnimation(false);
+          bugattiImg.current.className = 'img-bugatti';
+          setNavMenu(true)
+        }, 801);
+      }, 1000);
+    }, 400);
   }
 
   const closeMenu = () => {
-        setMenuState(false)
-        menuOpened.current.className = 'menu-not-opened'
-        imgBugatti.current.className = 'img-bugatti'
-        navbar.current.className = 'flex z-10 justify-between items-center p-8 bg-gradient-to-b from-black to-transparent w-full'
+        setNavMenu(false)
   }
 
   return (
-    <div className='fixed w-full h-full z-40'>
-      <div ref={navbar} className='flex z-10 justify-between items-center p-8 bg-gradient-to-b from-black to-transparent w-full'>
-          <h1 className='text-2xl font-bold text-white'>YourDreamCar</h1>
-          <FontAwesomeIcon onClick={openMenu} icon={faBarsStaggered} size='2x' color='white'/>
-      </div>
-      <div className='h-full relative'>
-            <img className={'img-bugatti'}
-                 src='/bugatti-divo-removebg-preview.png' 
-                 alt='bugatti image'
-                 ref={imgBugatti}
-            />
-            <div ref={menuOpened} className='menu-not-opened'>
-              <FontAwesomeIcon onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
-              <Link href={''}>Home</Link>
-              <Link href={''}>Blog</Link>
-              <Link href={''}>Online Personalization</Link>
-            </div>
-      </div>
-    </div>
+    <>
+      
+      {(!bugattiAnimation && !navMenu) && 
+                            <nav className='fixed w-full z-40'>
+                                <div className='flex z-10 justify-between items-center p-8 bg-gradient-to-b from-black to-transparent w-full'>
+                                       <h1 className='text-2xl font-bold text-white'>YourDreamCar</h1>
+                                       <FontAwesomeIcon onClick={openMenu} icon={faBarsStaggered} size='2x' color='white'/>
+                                </div>
+                            </nav>
+                            
+      }
+      {
+        bugattiAnimation && <div className='fixed h-full w-full z-40'>
+                               <img className={'img-bugatti'}
+                                    src='/bugatti-divo-removebg-preview.png' 
+                                    alt='bugatti image'
+                                    ref={bugattiImg}
+                                />
+                            </div>
+      }
+      {
+        navMenu && <div className='fixed h-full w-full bg-black flex justify-center items-center z-40'>
+                        <div className='flex flex-col text-center'>
+                          <FontAwesomeIcon className='pb-4' onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
+                          <Link onClick={closeMenu} className='text-white pb-4 font-bold text-xl' href={'/'}>Home</Link>
+                          <Link onClick={closeMenu} className='text-white pb-4 font-bold text-xl' href={'/blog'}>Blog</Link>
+                          <Link onClick={closeMenu} className='text-white pb-4 font-bold text-xl' href={'/personalize-yourdreamcar'}>Online Personalization</Link>
+                        </div>
+                   </div>
+      }
+       
+    </>
   )
 }

@@ -17,9 +17,7 @@ const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 export default function Home() {
   return (
     <main className={`${josefin.className} bg-black text-white text-opacity-85`}>
-      <section className="bg-image h-screen mb-16">
-          <Navbar />
-      </section>
+      <section className="bg-image h-screen mb-16"></section>
       <section className='flex flex-col items-center text-center px-8 pb-8'>
           <h2 className='font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8'>About us</h2>
           <About />
@@ -30,7 +28,7 @@ export default function Home() {
            <Service name='Window Tinting' desc={TextWrapService} img={'/window-tinting.png'} />
            <Service name='Paint Protection Film (PPF)' desc={TextWrapService} img={'/PPF.png'} />
       </section>
-      <section className='flex flex-col items-center text-center pb-8 z-10'>
+      <section className='flex flex-col items-center text-center pb-8'>
            <h2 className='font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8'>Where find Us?</h2>
            <PreMap />
       </section>

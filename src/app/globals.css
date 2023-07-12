@@ -17,7 +17,6 @@
 
 
 .img-bugatti{
-  opacity: 0;
   position: absolute;
   width: 5rem;
   height: 5rem;
@@ -28,17 +27,6 @@
   margin: auto;
 }
 
-.change-opacity{
-  opacity: 1;
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-}
 .zoom-one{
   position: absolute;
   width: 5rem;
@@ -48,7 +36,7 @@
   bottom: 0;
   top: 0;
   margin: auto;
-  transition: all 6000ms;
+  transition: all 5000ms;
   transform: scale(100);
 }
 
@@ -61,7 +49,7 @@
   bottom: 0;
   top: 0;
   margin: auto;
-  transition: all 1000ms;
+  transition: all 800ms;
   transform: scale(900);
 }
 
@@ -82,6 +70,10 @@
   display: none;
 }
 
+.container-bugatti-opened{
+  display: block;
+}
+
 .menu-opened{
   display: flex;
   flex-direction: column;
@@ -91,6 +83,5 @@
   background-color: black;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
 }
