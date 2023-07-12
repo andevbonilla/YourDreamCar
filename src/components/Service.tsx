@@ -10,8 +10,8 @@ interface Props {
 
 export const Service = ({name, desc, img}: Props) => {
   return (
-    <div className='flex flex-col justify-between pb-6 text-start'>
-        <Image className='pb-4'
+    <div className='flex flex-col justify-between pb-6 text-start md:flex-row'>
+        <Image className='pb-4 md:mr-6'
                src={img} 
                alt='image of the service' 
                width={400} 
@@ -21,9 +21,9 @@ export const Service = ({name, desc, img}: Props) => {
           <p className='pb-3 text-justify'>
             {desc}
           </p>
-          <div className='flex flex-col'>
+          <div className='flex flex-col md:flex-row'>
             <Link href={`/${name.replace(' ', '-').toLowerCase()}`} 
-                  className='mt-3 bg-transparent text-green-400 border-green-400 px-4 py-3 border-solid border-2'>
+                  className='mt-3 bg-transparent text-green-400 border-green-400 px-4 py-3 border-solid border-2 md:mr-4'>
                   Read more
             </Link>
             <button className='mt-3 bg-green-400 text-white border-none px-4 py-3'>Schedule your service</button>

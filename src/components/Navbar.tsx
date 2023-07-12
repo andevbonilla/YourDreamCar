@@ -3,7 +3,6 @@ import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-import { underlineClass } from '@/texts'
 
 export const Navbar = () => {
 
@@ -39,8 +38,8 @@ export const Navbar = () => {
       {(!bugattiAnimation && !navMenu) && 
                             <nav className='fixed w-full z-40'>
                                 <div className='flex z-10 justify-between items-center p-8 bg-gradient-to-b from-black to-transparent w-full'>
-                                       <h1 className='text-2xl font-bold text-white'>YourDreamCar</h1>
-                                       <FontAwesomeIcon onClick={openMenu} icon={faBarsStaggered} size='2x' color='white'/>
+                                       <Link href={'/'}><h1 className='text-2xl font-bold text-white'>YourDreamCar</h1></Link>
+                                       <FontAwesomeIcon className='cursor-pointer' onClick={openMenu} icon={faBarsStaggered} size='2x' color='white'/>
                                 </div>
                             </nav>
                             
@@ -57,19 +56,19 @@ export const Navbar = () => {
       {
         navMenu && <div className='fixed h-full w-full bg-black flex justify-center items-center z-40'>
                         <div className='flex flex-col text-center'>
-                          <FontAwesomeIcon className='pb-4' onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
+                          <FontAwesomeIcon className='pb-4 cursor-pointer'  onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-4 font-bold text-xl ${underlineClass}`} 
+                                className={`text-white pb-4 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
                                 href={'/'}>
                                 Home
                           </Link>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-4 font-bold text-xl ${underlineClass}`} 
+                                className={`text-white pb-4 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
                                 href={'/blog'}>
                                 Blog
                           </Link>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-4 font-bold text-xl ${underlineClass}`} 
+                                className={`text-white pb-4 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
                                 href={'/personalize-yourdreamcar'}>
                                 Online Personalization
                           </Link>
