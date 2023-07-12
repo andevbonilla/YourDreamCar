@@ -11,7 +11,7 @@ export const Footer = () => {
         <a href='https://www.instagram.com/yourdreamcar.ca/' target='_blank' rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} size='2x' color='white'/>
         </a>
-        <a href='https://www.instagram.com/yourdreamcar.ca/' target='_blank' rel="noopener noreferrer">
+        <a href='https://www.facebook.com/people/Yourdreamcar/100094399190794/?mibextid=LQQJ4d' target='_blank' rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} size='2x' color='white'/>
         </a>
         <a href='https://www.instagram.com/yourdreamcar.ca/' target='_blank' rel="noopener noreferrer">
