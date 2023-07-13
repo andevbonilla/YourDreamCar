@@ -3,6 +3,9 @@ export const TextWrapService = `At YourDreamCar, we are passionate about giving
                                 Our team of wrap experts is ready to bring your boldest and most creative ideas to life, 
                                 using the highest quality vinyls and precise installation techniques, making #YourDreamCar.`
                                 
+export const MinTextWrapService = `Our team of wrap experts is ready to bring your boldest and most creative ideas to life, 
+                                   using the highest quality vinyls and precise installation techniques`
+                                
 // blogs texts
 export const ArticleUnveilingTheArtOfWrapping = `Gift-giving is a timeless tradition that brings joy and warmth to both the giver and the recipient. However, the way a gift is presented can significantly enhance its impact and create an unforgettable moment. That's where the art of wrapping comes into play. In this blog post, we will explore the world of wrapping and discover how it can transform a simple gesture into a cherished memory. 
                                                  The Power of Presentation: Wrapping a gift is more than just a means to conceal its contents; it's an opportunity to create anticipation and excitement. A beautifully wrapped gift instantly captures attention and generates curiosity. By investing time and effort into the presentation, you demonstrate the value and thoughtfulness behind the gift itself.
