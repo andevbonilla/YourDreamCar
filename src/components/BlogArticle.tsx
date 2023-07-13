@@ -7,11 +7,10 @@ interface Props {
   title: string,
   date: string,
   img: string,
-  link: string,
-  info: string
+  link: string
 }
 
-export const BlogArticle = ({title, date, img, link, info}: Props) => {
+export const BlogArticle = ({title, date, img, link}: Props) => {
   return (
     <div className='flex flex-col items-center pb-8 text-start md:flex-row md:items-start max-w-3xl'>
         <Image className='pb-12 md:mr-6 md:pb-0 md:h-96'

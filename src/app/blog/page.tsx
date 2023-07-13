@@ -1,9 +1,7 @@
-import React from 'react'
+import { BlogArticle } from '@/components/BlogArticle'
 
 // fonts
 import { Josefin_Sans } from '@next/font/google'
-import { BlogArticle } from '@/components/BlogArticle'
-import { ArticleUnveilingTheArtOfWrapping } from '@/texts'
 const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 
 const BlogHome = () => {
@@ -16,13 +14,13 @@ const BlogHome = () => {
                    img='/wrapping-service-img-min.png' 
                    date='7/12/2023' 
                    link='/blog/unveiling-the-art-of-wrapping' 
-                   info={ArticleUnveilingTheArtOfWrapping} />
+       />
 
       <BlogArticle title='Advantages of Wraps: Why Wrapping is Superior to Paint' 
                    img='/paintig-vs-wrap-min.png' 
                    date='7/12/2023' 
                    link='/blog/advantages-of-wraps' 
-                   info={ArticleUnveilingTheArtOfWrapping} />
+       />
 
     </main>
   )
