@@ -31,8 +31,8 @@ export default function Home() {
           <h2 className={`font-bold text-2xl pb-12 underline decoration-wavy decoration-green-400 underline-offset-8`}>About us</h2>
           <About />
       </section>
-      <section className='md:px-32 md:pb-16 flex flex-col items-center text-center pb-12'>
-        
+      <section className='md:pb-16 flex flex-col items-center text-center pb-12'>
+      
            <h2 className={`font-bold text-2xl pb-12 underline decoration-wavy decoration-green-400 underline-offset-8`}>Services</h2>
            
            <Service name='Wrapping Service' desc={MinTextWrapService} img={'wrapping-service-img-min.png'} />
