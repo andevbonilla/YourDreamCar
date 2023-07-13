@@ -31,7 +31,11 @@ export default function Home() {
           <About />
       </section>
       {/* services section */}
-      <Services />
+      <section className='md:pb-16 flex flex-col items-center text-center pb-12'>
+          <h2 className={`font-bold text-2xl pb-12 underline decoration-wavy decoration-green-400 underline-offset-8`}>Services</h2>
+          <Services />
+      </section>
+      
       {/* ubication section */}
       <section className='md:pb-16 flex flex-col items-center text-center pb-12'>
            <h2 className={`font-bold text-2xl pb-12 underline decoration-wavy decoration-green-400 underline-offset-8`}>Where find Us?</h2>

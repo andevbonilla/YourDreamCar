@@ -22,23 +22,21 @@ const Services = () => {
   
 
   return (
-    <section className='md:pb-16 flex flex-col items-center text-center pb-12'>
-      
-           <h2 className={`font-bold text-2xl pb-12 underline decoration-wavy decoration-green-400 underline-offset-8`}>Services</h2>
+    <div className='md:flex w-full'>
 
-           <div className='w-full' onClick={() => showMoreInfo('Wrapping Service')}>
+           <div className='w-full cursor-pointer' onClick={() => showMoreInfo('Wrapping Service')}>
               <Service active={(whichActive === 'Wrapping Service')} name='Wrapping Service' desc={MinTextWrapService} img={'wrapping-service-img-min.png'} />
            </div>
 
-           <div className='w-full' onClick={() => showMoreInfo('Window Tinting')}> 
+           <div className='w-full cursor-pointer' onClick={() => showMoreInfo('Window Tinting')}> 
               <Service active={(whichActive === 'Window Tinting')} name='Window Tinting' desc={MinTextWrapService} img={'window-tinting-min.png'} />
            </div>
 
-           <div className='w-full' onClick={() => showMoreInfo('Paint Protection Film')}>
+           <div className='w-full cursor-pointer' onClick={() => showMoreInfo('Paint Protection Film')}>
               <Service active={(whichActive === 'Paint Protection Film')} name='Paint Protection Film' desc={MinTextWrapService} img={'PPF-min.png'} />
            </div>
            
-    </section>
+    </div>
   )
 }
 
