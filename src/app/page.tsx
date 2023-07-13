@@ -6,12 +6,17 @@ config.autoAddCss = false
 import { About } from '@/components/About'
 import { Service } from '@/components/Service'
 import { TextWrapService } from '@/texts'
-import PreMap from '@/components/Map'
 import { Footer } from '@/components/Footer' 
 
 // fonts
 import { Josefin_Sans } from '@next/font/google'
+import dynamic from 'next/dynamic'
 const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
+
+const Map = dynamic(() => import("@/components/Map"), {
+    loading: () => <p>loading map...</p>,
+    ssr: false
+})
 
 export default function Home() {
   return (
@@ -34,7 +39,7 @@ export default function Home() {
       </section>
       <section className='md:pb-16 flex flex-col items-center text-center pb-8'>
            <h2 className={`md:pb-12 font-bold text-2xl pb-6 underline decoration-wavy decoration-green-400 underline-offset-8`}>Where find Us?</h2>
-           <PreMap />
+           <Map />
       </section>
       <footer className='md:px-32 md:pb-16 flex flex-col px-8 pb-8'>
         <h2 className={`md:pb-12 text-center font-bold text-2xl pb-10 underline decoration-wavy decoration-green-400 underline-offset-8`}>Social Media</h2>
