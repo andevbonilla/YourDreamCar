@@ -6,7 +6,7 @@ const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 
 const BlogHome = () => {
   return (
-    <main className={`${josefin.className} flex flex-col items-center md:px-32 bg-black text-white text-opacity-85 md:text-xl px-10 text-center h-full`}>
+    <main className={`${josefin.className} md:px-[25%] flex flex-col bg-black text-white text-opacity-85 md:text-xl px-10 text-center h-full`}>
       
       <h2 className='pt-28 pb-8 text-xl font-bold'>Lastest Posts</h2>
 

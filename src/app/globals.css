@@ -36,8 +36,8 @@
   bottom: 0;
   top: 0;
   margin: auto;
-  transition: all 1000ms;
-  transform: scale(8);
+  transition: all 900ms;
+  transform: scale(6);
 }
 
 .zoom-two{
@@ -49,7 +49,7 @@
   bottom: 0;
   top: 0;
   margin: auto;
-  transition: all 800ms;
+  transition: all 700ms;
   transform: scale(900);
 }
 
