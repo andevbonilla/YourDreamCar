@@ -21,11 +21,13 @@ export const Navbar = () => {
         bugattiImg.current.className = 'zoom-two'
         setTimeout(() => {
           setNavMenu(true)
-          setBugattiAnimation(false);
-          bugattiImg.current.className = 'img-bugatti';
+          setTimeout(() => {
+            bugattiImg.current.className = 'img-bugatti'
+            setBugattiAnimation(false)
+          }, 10);
         }, 801);
-      }, 1000);
-    }, 200);
+      }, 2001);
+    }, 10);
   }
 
   const closeMenu = () => {
@@ -54,7 +56,7 @@ export const Navbar = () => {
                             </div>
       }
       {
-        navMenu && <div className='fixed h-full w-full bg-black flex justify-center items-center z-40'>
+        navMenu && <div className='fixed h-full w-full bg-black flex justify-center items-center z-50'>
                         <div className='flex flex-col text-center'>
                           <FontAwesomeIcon className='pb-8 cursor-pointer'  onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
                           <Link onClick={closeMenu} 
