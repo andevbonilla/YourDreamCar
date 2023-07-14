@@ -10,15 +10,15 @@ const BlogHome = () => {
       
       <h2 className='pt-28 pb-8 text-xl font-bold'>Lastest Posts</h2>
 
-      <BlogArticle title='Unveiling the Art of Wrapping: Elevating Your Gift-Giving Experience' 
-                   img='/wrapping-service-img-min.png' 
-                   date='7/12/2023' 
-                   link='/blog/unveiling-the-art-of-wrapping' 
+      <BlogArticle title='Top Car Wrap Trends' 
+                   img='/bmw-wrapped-min.png' 
+                   date='14/07/2023' 
+                   link='/blog/top-car-wrap-trends' 
        />
 
       <BlogArticle title='Advantages of Wraps: Why Wrapping is Superior to Paint' 
                    img='/paintig-vs-wrap-min.png' 
-                   date='7/12/2023' 
+                   date='12/07/2023' 
                    link='/blog/advantages-of-wraps' 
        />
 
