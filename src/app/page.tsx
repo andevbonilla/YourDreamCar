@@ -37,15 +37,10 @@ export default function Home() {
       </section>
       
       {/* ubication section */}
-      <section className='md:pb-16 flex flex-col items-center text-center pb-12'>
+      <section className='md:pb-16 flex flex-col items-center text-center'>
            <h2 className={`font-bold text-2xl pb-12 underline decoration-wavy decoration-green-400 underline-offset-8`}>Where find Us?</h2>
            <Map />
       </section>
-      {/* footer section */}
-      <footer className='md:px-32 md:pb-16 flex flex-col px-8 pb-12'>
-        <h2 className={`text-center font-bold text-2xl pb-12 underline decoration-wavy decoration-green-400 underline-offset-8`}>Social Media</h2>
-        <Footer />
-      </footer>
     </main>
   )
 }

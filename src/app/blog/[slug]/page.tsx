@@ -1,32 +1,46 @@
-import { ArticleUnveilingTheArtOfWrapping, ArticleWrappingSuperiorToPaint } from '@/texts';
 import React from 'react'
+import { blogdb } from "@/interfaces/blogdb.interface";
 
 // fonts
 import { Josefin_Sans } from '@next/font/google'
+import { blogsdb } from '@/blogsdb';
+import Image from 'next/image';
 const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 
 const page = ({ params }: { params: { slug: string } }) => {
 
-  let ArticleTitle = ''
-  let ArticleText = ''
+  const blogInfo = blogsdb.find((blog)=>blog.id === params.slug);
 
-  if (params.slug === 'advantages-of-wraps') {
-    ArticleText = ArticleWrappingSuperiorToPaint
-    ArticleTitle = 'Advantages of Wraps: Why Wrapping is Superior to Paint'
-  }else if(params.slug === 'unveiling-the-art-of-wrapping'){
-    ArticleText = ArticleUnveilingTheArtOfWrapping
-    ArticleTitle = 'Unveiling the Art of Wrapping: Elevating Your Gift-Giving Experience'
-  }
-
-  console.log(params);
   return (
-    <main className={`${josefin.className} bg-black text-white text-opacity-85`}>
-      <h1 className='md:px-32 px-8 pt-24 pb-6 text-xl font-bold'>{ArticleTitle}</h1>
-      <p className='md:px-32 px-8 pb-8 text-justify'>
-        {ArticleText}
-      </p>
-    </main>
+     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl px-8 text-justify`}>
+        <article className='flex flex-col items-center'>
+              <header>
+                  <h1 className='text-2xl font-bold pt-24 pb-8'>{blogInfo?.title}</h1>
+              </header>
+              <h3 className='pb-2 font-bold text-xl'>Introduction:</h3> 
+              <p className='pb-6'>{blogInfo?.intro}</p>
+              <Image
+                  className='pb-6' 
+                  src={`${blogInfo?.images[0]}`}
+                  width={400}
+                  height={300}
+                  alt={`image of ${blogInfo?.shortTitle}`}
+              />
+              <h3 className='pb-2 font-bold text-xl'>{blogInfo?.middleTitle}:</h3> 
+              <p className='pb-6'>{blogInfo?.middleContent}</p>
+              <Image
+                  className='pb-6'  
+                  src={`${blogInfo?.images[1]}`}
+                  width={400}
+                  height={300}
+                  alt={`image of ${blogInfo?.shortTitle}`}
+              />
+              <h3 className='pb-2 font-bold text-xl'>Conclusion:</h3> 
+              <p className='pb-6'>{blogInfo?.conclusion}</p>     
+        </article>
+      </main>
   )
+
 }
 
 export default page

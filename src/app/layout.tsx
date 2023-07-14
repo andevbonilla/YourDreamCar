@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,11 @@ export default function RootLayout({
       <body className={inter.className}>
           <Navbar />
           {children}
+          {/* footer section */}
+          <footer className='md:px-32 md:pb-16 flex flex-col px-8 pt-12 pb-12 bg-black text-white'>
+            <h2 className={`text-center font-bold text-2xl pb-12 underline decoration-wavy decoration-green-400 underline-offset-8`}>Social Media</h2>
+            <Footer />
+          </footer>
       </body>
     </html>
   )

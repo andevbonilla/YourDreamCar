@@ -43,3 +43,5 @@ const Service = ({active, name, desc, img}: Props) => {
 }
 
 export default Service;
+
+
