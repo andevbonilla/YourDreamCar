@@ -26,7 +26,7 @@ export const Navbar = () => {
             setBugattiAnimation(false)
           }, 10);
         }, 801);
-      }, 2001);
+      }, 1001);
     }, 10);
   }
 

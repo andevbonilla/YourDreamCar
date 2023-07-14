@@ -36,7 +36,7 @@
   bottom: 0;
   top: 0;
   margin: auto;
-  transition: all 2000ms;
+  transition: all 1000ms;
   transform: scale(8);
 }
 
