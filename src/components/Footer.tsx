@@ -43,14 +43,14 @@ export const Footer = () => {
         <div className='flex flex-col mb-3 md:mr-10'>
           <h4 className='font-bold'>Enterprise</h4>
           <Link href={''}>Jobs</Link>
-          <Link href={''}>Blog</Link>
+          <Link href={'/blog'}>Blog</Link>
           <Link href={''}>Privacy</Link>
         </div>
         <div className='flex flex-col mb-3 md:mr-10'>
           <h4 className='font-bold'>Information</h4>
           <Link href={''}>FAQs</Link>
           <Link href={''}>Contact</Link>
-          <Link href={''}>Blog</Link>
+          <Link href={'/blog'}>Blog</Link>
         </div>
       </div>
       <p className='text-center mt-4'>© YourDreamCar 2023</p>

@@ -56,19 +56,19 @@ export const Navbar = () => {
       {
         navMenu && <div className='fixed h-full w-full bg-black flex justify-center items-center z-40'>
                         <div className='flex flex-col text-center'>
-                          <FontAwesomeIcon className='pb-4 cursor-pointer'  onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
+                          <FontAwesomeIcon className='pb-8 cursor-pointer'  onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-4 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
+                                className={`text-white pb-8 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
                                 href={'/'}>
                                 Home
                           </Link>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-4 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
+                                className={`text-white pb-8 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
                                 href={'/blog'}>
                                 Blog
                           </Link>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-4 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
+                                className={`text-white pb-8 font-bold text-xl underline decoration-wavy decoration-green-400 underline-offset-8`} 
                                 href={'/personalize-yourdreamcar-online'}>
                                 Online Personalization
                           </Link>
