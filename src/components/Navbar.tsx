@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const Navbar = () => {
 
@@ -39,8 +40,10 @@ export const Navbar = () => {
       
       {(!bugattiAnimation && !navMenu) && 
                             <nav className='fixed w-full bg-gradient-to-b from-black to-transparent z-40'>
-                                <div className='md:px-32 flex z-10 justify-between items-center p-8 w-full'>
-                                       <Link href={'/'}><h1 className='text-2xl font-bold text-white'>YourDreamCar</h1></Link>
+                                <div className='md:px-32 flex z-10 justify-between items-center px-8 pt-8 w-full'>
+                                       <Link href={'/'}>
+                                        <img src='/logo.png' alt='logo' className='w-[40%]' />
+                                       </Link>
                                        <FontAwesomeIcon className='cursor-pointer' onClick={openMenu} icon={faBarsStaggered} size='2x' color='white'/>
                                 </div>
                             </nav>
