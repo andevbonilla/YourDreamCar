@@ -44,7 +44,7 @@ export const Navbar = () => {
                                        <Link href={'/'}>
                                         <img src='/logo.png' alt='logo' className='w-[40%]' />
                                        </Link>
-                                       <FontAwesomeIcon className='cursor-pointer' onClick={openMenu} icon={faBarsStaggered} size='2x' color='white'/>
+                                       <FontAwesomeIcon className='cursor-pointer pb-6 pr-4' onClick={openMenu} icon={faBarsStaggered} size='2x' color='white'/>
                                 </div>
                             </nav>
                             
