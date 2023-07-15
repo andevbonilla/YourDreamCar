@@ -24,7 +24,9 @@ const Services = dynamic(() => import("@/components/Services"), {
 export default function Home() {
   return (
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl`}>
-      <section className="bg-image h-screen mb-16"></section>
+      <section className="bg-image h-screen mb-16 flex justify-start items-end p-[10%]">
+        <h1 className='text-5xl font-bold'>Dream like a boy because the reality is here</h1>
+      </section>
       {/* about section */}
       <section className='md:px-32 md:pb-16 flex flex-col items-center text-center px-8 pb-12'>
           <h2 className={`font-bold text-2xl pb-12 underline decoration-[#18debe] underline-offset-8`}>About us</h2>
