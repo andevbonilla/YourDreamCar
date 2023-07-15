@@ -12,8 +12,8 @@ const page = ({ params }: { params: { slug: string } }) => {
   const blogInfo = blogsdb.find((blog)=>blog.id === params.slug);
 
   return (
-     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl px-8 text-justify`}>
-        <article className='flex flex-col items-center'>
+     <main className={`${josefin.className} md:px-[10%] bg-black text-white text-opacity-85 md:text-xl px-8 text-justify`}>
+        <article className='flex flex-col items-center pt-24'>
               <header>
                   <h1 className='text-2xl font-bold pt-24 pb-8'>{blogInfo?.title}</h1>
               </header>

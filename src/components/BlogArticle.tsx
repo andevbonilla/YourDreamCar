@@ -30,7 +30,7 @@ export const BlogArticle = ({title, date, img, link}: Props) => {
           
           <div className='flex flex-col md:flex-row md:justify-end'>
             <Link href={link} 
-                  className='md:mt-0 mt-3 bg-transparent text-green-400 border-green-400 px-4 py-3 border-solid border-2 md:mr-4'>
+                  className='md:mt-0 mt-3 bg-transparent text-[#18debe] border-[#18debe] px-4 py-3 border-solid border-2 md:mr-4'>
                   Read more
             </Link>
           </div>

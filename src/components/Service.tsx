@@ -14,7 +14,7 @@ const Service = ({active, name, desc, img}: Props) => {
 
   useEffect(() => {
     if (active) {
-      setGradient('linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 256, 0, 0.3))')
+      setGradient('linear-gradient(rgba(0, 0, 0, 0.8), #18debe)')
     }else{
       setGradient('linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))')
     }

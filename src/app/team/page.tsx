@@ -6,7 +6,7 @@ const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 
 const teamPage = () => {
   return (
-    <main className={`${josefin.className} flex flex-col md:px-[25%] md:text-xl bg-black text-white text-opacity-85 px-10 text-center h-full`}>
+    <main className={`${josefin.className} pt-24 flex flex-col md:px-[25%] md:text-xl bg-black text-white text-opacity-85 px-10 text-center h-full`}>
         
         <div className='flex flex-col items-center pb-8 text-start md:flex-row md:items-start max-w-3xl mt-32'>
           <Image className='pb-12 md:mr-6 md:pb-0 md:h-96'

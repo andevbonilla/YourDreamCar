@@ -63,22 +63,22 @@ export const Navbar = () => {
                         <div className='flex flex-col text-center'>
                           <FontAwesomeIcon className='pb-8 cursor-pointer'  onClick={closeMenu} icon={faXmark} size='2x' color='white'/>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-8 font-bold text-xl underline decoration-green-400 underline-offset-8`} 
+                                className={`text-white pb-8 font-bold text-xl underline decoration-[#18debe] underline-offset-8`} 
                                 href={'/'}>
                                 Home
                           </Link>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-8 font-bold text-xl underline decoration-green-400 underline-offset-8`} 
+                                className={`text-white pb-8 font-bold text-xl underline decoration-[#18debe] underline-offset-8`} 
                                 href={'/blog'}>
                                 Blog
                           </Link>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-8 font-bold text-xl underline decoration-green-400 underline-offset-8`} 
+                                className={`text-white pb-8 font-bold text-xl underline decoration-[#18debe] underline-offset-8`} 
                                 href={'/team'}>
                                 Team
                           </Link>
                           <Link onClick={closeMenu} 
-                                className={`text-white pb-8 font-bold text-xl underline decoration-green-400 underline-offset-8`} 
+                                className={`text-white pb-8 font-bold text-xl underline decoration-[#18debe] underline-offset-8`} 
                                 href={'/personalize-yourdreamcar-online'}>
                                 Online Personalization
                           </Link>
