@@ -7,6 +7,9 @@ import Link from 'next/link'
 export const Footer = () => {
   return (
     <>
+      <div className='flex justify-center md:text-3xl text-xl font-bold pb-12'>
+        <h3>contact@yourdreamcar.ca</h3>
+      </div>
       <div className='flex justify-center mx-10 md:flex-row md:mb-10'>
         <a className='cursor-pointer mr-10'
            href='https://www.instagram.com/yourdreamcar.ca/' 
