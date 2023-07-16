@@ -4,7 +4,6 @@ config.autoAddCss = false
 
 // components imports
 import { About } from '@/components/About'
-import { Footer } from '@/components/Footer' 
 
 // fonts
 import { Josefin_Sans } from '@next/font/google'
