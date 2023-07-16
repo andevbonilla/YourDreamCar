@@ -48,13 +48,13 @@ const Service = ({active, name, desc, img}: Props) => {
 
   return (
     <>
-      {form && <div className='w-full h-screen fixed top-0 flex justify-center items-center z-40'>
-                  <div className='w-[90%] h-[90%] fixed bg-black z-40 p-8'>
+      {form && <div className='w-full h-screen fixed top-0 flex justify-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
+                  <div className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
                     <div className='flex justify-end'>
                       <FontAwesomeIcon onClick={closeForm} className='text-3xl' icon={faCircleXmark} />
                     </div>
-                    <div className='text-xl pb-4'>
-                      <h3>Get a Quote!</h3>
+                    <div className='text-xl pb-6'>
+                      <h3 className='underline decoration-[#18debe] underline-offset-8'>Get a Quote!</h3>
                     </div>
 
                     <input name='name' className='w-full p-2 mb-4 text-black' type='text' placeholder='First Name*'/>
@@ -76,7 +76,7 @@ const Service = ({active, name, desc, img}: Props) => {
 
 
                     <form onSubmit={sendEmail}>
-                      <button className='bg-[#18debe] text-white px-4 py-1'>Submit</button>
+                      <button className='bg-[#18debe] text-white px-4 py-1 mb-8'>Submit</button>
                     </form>
                   </div>
                </div>

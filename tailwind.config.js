@@ -15,10 +15,8 @@ module.exports = {
     },
     screens: {
       'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
       'md': '1000px',
-      // => @media (min-width: 768px) { ... }
+      'lg': '1500px',
     }
   },
   plugins: [],

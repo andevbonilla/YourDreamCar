@@ -17,7 +17,7 @@ const Services = () => {
   
 
   return (
-    <div className='md:flex w-full'>
+    <div className='md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 w-full'>
 
            <div className='w-full cursor-pointer' onMouseEnter={() => showMoreInfo('Vehicle Wraps')}
                                                   onMouseLeave={() => showMoreInfo('')} 
