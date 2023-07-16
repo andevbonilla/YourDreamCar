@@ -68,9 +68,9 @@ const Service = ({active, name, desc, img}: Props) => {
 
                     <h4 className='pb-4'>The best way of contact you</h4>
                     <div className='flex mb-4'>
-                      <input className='w-full px-2 py-2 text-black' type='checkbox'/>Email
-                      <input className='w-full px-2 py-2 text-black' type='checkbox'/>Call
-                      <input className='w-full px-2 py-2 text-black' type='checkbox'/>Message
+                      <input className='mx-3 mb-1 text-black' type='checkbox'/>Email
+                      <input className='mx-3 mb-1 text-black' type='checkbox'/>Call
+                      <input className='mx-3 mb-1 text-black' type='checkbox'/>Message
                     </div>
                     <textarea className='w-full h-24 p-2 text-black mb-4' placeholder='Message' />
 
