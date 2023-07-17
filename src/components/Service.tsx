@@ -39,33 +39,40 @@ const Service = ({active, name, desc, img}: Props) => {
     const carmake = formData.get('carmake');
     const carmade = formData.get('carmade');
 
-    if (!name || name?.length < 3) {
-      return;
-    }
+    // if (!name || name?.length < 3) {
+    //   console.log("name")
+    //   return;
+    // }
 
-    if (!lastname || lastname?.length < 3) {
-      return;
-    }
+    // if (!lastname || lastname?.length < 3) {
+    //   console.log("lastname")
+    //   return;
+    // }
 
-    if (!email || email?.length < 5) {
-      return;
-    }
+    // if (!email || email?.length < 5) {
+    //   console.log("email")
+    //   return;
+    // }
     
-    if (!phone || phone?.length < 4) {
-      return;
-    }
+    // if (!phone || phone?.length < 4) {
+    //   console.log("phone")
+    //   return;
+    // }
 
-    if (!carmodel || carmodel?.length < 3) {
-      return;
-    }
+    // if (!carmodel || carmodel?.length < 3) {
+    //   console.log("carmodel")
+    //   return;
+    // }
 
-    if (!carmake || carmake?.length < 3) {
-      return;
-    }
+    // if (!carmake || carmake?.length < 3) {
+    //   console.log("carmake")
+    //   return;
+    // }
 
-    if (!carmade || carmade?.length < 3) {
-      return;
-    }
+    // if (!carmade || carmade?.length < 3) {
+    //   console.log("carmade")
+    //   return;
+    // }
     
     setForm(false)
 
