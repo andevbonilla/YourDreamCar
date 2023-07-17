@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { MinTextWrapService } from '@/texts'
+import { MinTextBlackoutService, MinTextWrapService } from '@/texts'
 import Service from './Service';
 
 const Services = () => {
@@ -28,7 +28,7 @@ const Services = () => {
            <div className='w-full cursor-pointer' onMouseEnter={() => showMoreInfo('Blackout')}
                                                   onMouseLeave={() => showMoreInfo('')}  
                                                   onClick={() => showMoreInfo('Blackout')}> 
-              <Service active={(whichActive === 'Blackout')} name='Blackout' desc={MinTextWrapService} img={'window-tinting-min.png'} />
+              <Service active={(whichActive === 'Blackout')} name='Blackout' desc={MinTextBlackoutService} img={'window-tinting-min.png'} />
            </div>
 
            <div className='w-full cursor-pointer' onMouseEnter={() => showMoreInfo('Interior Wrap')} 
@@ -47,6 +47,12 @@ const Services = () => {
                                                   onMouseLeave={() => showMoreInfo('')} 
                                                   onClick={() => showMoreInfo('Caliper Paint')}>
               <Service active={(whichActive === 'Caliper Paint')} name='Caliper Paint' desc={MinTextWrapService} img={'caliper-blue.png'} />
+           </div>
+
+           <div className='w-full cursor-pointer' onMouseEnter={() => showMoreInfo('Decals')} 
+                                                  onMouseLeave={() => showMoreInfo('')} 
+                                                  onClick={() => showMoreInfo('Decals')}>
+              <Service active={(whichActive === 'Decals')} name='Decals' desc={MinTextWrapService} img={'decal-img.png'} />
            </div>
            
     </div>
