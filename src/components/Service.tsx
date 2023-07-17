@@ -38,7 +38,37 @@ const Service = ({active, name, desc, img}: Props) => {
     const carmodel = formData.get('carmodel');
     const carmake = formData.get('carmake');
     const carmade = formData.get('carmade');
+
+    if (!name || name?.length < 3) {
+      return;
+    }
+
+    if (!lastname || lastname?.length < 3) {
+      return;
+    }
+
+    if (!email || email?.length < 5) {
+      return;
+    }
     
+    if (!phone || phone?.length < 4) {
+      return;
+    }
+
+    if (!carmodel || carmodel?.length < 3) {
+      return;
+    }
+
+    if (!carmake || carmake?.length < 3) {
+      return;
+    }
+
+    if (!carmade || carmade?.length < 3) {
+      return;
+    }
+    
+    setForm(false)
+
   }
 
   const closeForm = () => {
@@ -48,7 +78,7 @@ const Service = ({active, name, desc, img}: Props) => {
 
   return (
     <>
-      {form && <div className='w-full h-screen fixed top-0 flex justify-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
+      {form && <div className='w-full h-screen fixed top-0 left-0 flex justify-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
                   <div className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
                     <div className='flex justify-end'>
                       <FontAwesomeIcon onClick={closeForm} className='text-3xl' icon={faCircleXmark} />
