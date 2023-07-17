@@ -1,15 +1,11 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { MinTextBlackoutService, MinTextWrapService } from '@/texts'
 import Service from './Service';
 
 const Services = () => {
 
   const [whichActive, setWhichActive] = useState("");
-  useEffect(() => {
-    console.log(whichActive)
-  }, [whichActive])
-  
 
   const showMoreInfo = (name:string) => {   
     setWhichActive(name)

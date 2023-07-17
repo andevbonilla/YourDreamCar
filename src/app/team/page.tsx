@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 // fonts
 import { Josefin_Sans } from '@next/font/google'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
