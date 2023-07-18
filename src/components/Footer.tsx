@@ -39,9 +39,12 @@ export const Footer = () => {
       <div className='flex flex-col justify-start mt-8 md:flex-row'>
         <div className='flex flex-col mb-3 md:mr-10'>
           <h4 className='font-bold'>Services</h4>
-          <Link href={''}>Wrapping Service</Link>
-          <Link href={''}>Window Tinting</Link>
-          <Link href={''}>Paint Protection Film - PPF</Link>
+          <Link href={'/vehicle-wraps'}>Vehicle Wraps</Link>
+          <Link href={'/blackout'}>Blackout</Link>
+          <Link href={'/interior-wrap'}>Interior Wrap</Link>
+          <Link href={'/headlight-taillight'}>Headlight & Taillight</Link>
+          <Link href={'/caliper-paint'}>Caliper Paint</Link>
+          <Link href={'/decals'}>Decals</Link>
         </div>
         <div className='flex flex-col mb-3 md:mr-10'>
           <h4 className='font-bold'>Enterprise</h4>
