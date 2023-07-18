@@ -99,8 +99,8 @@ const Service = ({active, name, desc, img}: Props) => {
                     <input name='email' className='w-full p-2 mb-4 text-black' type='email' placeholder='Email Address*'/>
                     <input name='phone' className='w-full p-2 mb-4 text-black' type='phone' placeholder='Phone Number*'/>
 
-                    <input name='carmodel' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Model*'/>
                     <input name='carmake' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Make*'/>
+                    <input name='carmodel' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Model*'/>
                     <input name='carmade' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Year Made*'/>
 
                     <h4 className='pb-4'>The best way of contact you</h4>

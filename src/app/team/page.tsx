@@ -11,7 +11,7 @@ const teamPage = () => {
         
         <div className='flex flex-col items-center pb-8 text-start md:flex-row md:items-center md:justify-center max-w-3xl mt-24'>
           <img 
-                className='md:mr-10 md:pb-0 rounded-full h-[20rem] w-[20rem]'
+                className='md:mr-10 md:pb-0 rounded-full h-[12rem] w-[12rem]'
                 src={'/avendano-img.png'} 
                 alt='image of David Avendano' 
           />
@@ -46,7 +46,7 @@ const teamPage = () => {
 
         <div className='flex flex-col items-center pb-8 text-start md:flex-row md:items-center md:justify-center max-w-3xl mt-8'>
           <img 
-                className='md:mr-10 md:pb-0 rounded-full h-[20rem] w-[20rem]'
+                className='md:mr-10 md:pb-0 rounded-full h-[12rem] w-[12rem]'
                 src={'/bonilla-img.JPG'} 
                 alt='image of Andres Bonilla' 
           />
