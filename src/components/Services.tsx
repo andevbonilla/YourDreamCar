@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import { MinTextBlackoutService, MinTextWrapService } from '@/texts'
+import { MinTextBlackoutService, MinTextCaliperService, MinTextDecalsService, MinTextInteriorWrapService, MinTextTailightService, MinTextWrapService } from '@/texts'
 import Service from './Service';
 
 const Services = () => {
@@ -30,25 +30,25 @@ const Services = () => {
            <div className='w-full cursor-pointer' onMouseEnter={() => showMoreInfo('Interior Wrap')} 
                                                   onMouseLeave={() => showMoreInfo('')} 
                                                   onClick={() => showMoreInfo('Interior Wrap')}>
-              <Service active={(whichActive === 'Interior Wrap')} name='Interior Wrap' desc={MinTextWrapService} img={'interior-wrap-tesla.png'} />
+              <Service active={(whichActive === 'Interior Wrap')} name='Interior Wrap' desc={MinTextInteriorWrapService} img={'interior-wrap-tesla.png'} />
            </div>
 
            <div className='w-full cursor-pointer' onMouseEnter={() => showMoreInfo('Headlight & Taillight')} 
                                                   onMouseLeave={() => showMoreInfo('')} 
                                                   onClick={() => showMoreInfo('Headlight & Taillight')}>
-              <Service active={(whichActive === 'Headlight & Taillight')} name='Headlight & Taillight' desc={MinTextWrapService} img={'headlight-taillight.png'} />
+              <Service active={(whichActive === 'Headlight & Taillight')} name='Headlight & Taillight' desc={MinTextTailightService} img={'headlight-taillight.png'} />
            </div>
 
            <div className='w-full cursor-pointer' onMouseEnter={() => showMoreInfo('Caliper Paint')} 
                                                   onMouseLeave={() => showMoreInfo('')} 
                                                   onClick={() => showMoreInfo('Caliper Paint')}>
-              <Service active={(whichActive === 'Caliper Paint')} name='Caliper Paint' desc={MinTextWrapService} img={'caliper-blue.png'} />
+              <Service active={(whichActive === 'Caliper Paint')} name='Caliper Paint' desc={MinTextCaliperService} img={'caliper-blue.png'} />
            </div>
 
            <div className='w-full cursor-pointer' onMouseEnter={() => showMoreInfo('Decals')} 
                                                   onMouseLeave={() => showMoreInfo('')} 
                                                   onClick={() => showMoreInfo('Decals')}>
-              <Service active={(whichActive === 'Decals')} name='Decals' desc={MinTextWrapService} img={'decal-img.png'} />
+              <Service active={(whichActive === 'Decals')} name='Decals' desc={MinTextDecalsService} img={'decal-img.png'} />
            </div>
            
     </div>
