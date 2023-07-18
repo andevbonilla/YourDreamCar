@@ -6,7 +6,7 @@ const BlackoutPage = () => {
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl px-[10%]`}>
       <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>Blackout</h1>
       <p className='pb-4'>
-         If you're looking to add a touch of mystery and elegance to your vehicle, 
+         If you&apos;re looking to add a touch of mystery and elegance to your vehicle, 
          our Blackout service is perfect for you. With our meticulous approach and high-quality products, 
          we will darken the chrome on your vehicle, providing you with elegance and an incredible touch. Additionally, 
          the clean and sophisticated finish of the Blackout will make your car stand out from the crowd.
