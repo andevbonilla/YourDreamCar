@@ -37,26 +37,26 @@ export const Footer = () => {
         </a>
       </div>
       <div className='flex flex-col justify-start mt-8 md:flex-row'>
-        <div className='flex flex-col mb-3 md:mr-10'>
-          <h4 className='font-bold'>Services</h4>
-          <Link href={'/vehicle-wraps'}>Vehicle Wraps</Link>
-          <Link href={'/blackout'}>Blackout</Link>
-          <Link href={'/interior-wrap'}>Interior Wrap</Link>
-          <Link href={'/headlight-taillight'}>Headlight & Taillight</Link>
-          <Link href={'/caliper-paint'}>Caliper Paint</Link>
-          <Link href={'/decals'}>Decals</Link>
+        <div className='flex flex-col mb-3 md:mr-14'>
+          <h4 className='font-bold mb-3 text-lg'>Services</h4>
+          <Link className='mb-3' href={'/decals'}>Decals</Link>
+          <Link className='mb-3' href={'/blackout'}>Blackout</Link>
+          <Link className='mb-3' href={'/vehicle-wraps'}>Vehicle Wraps</Link>
+          <Link className='mb-3' href={'/interior-wrap'}>Interior Wrap</Link>
+          <Link className='mb-3' href={'/caliper-paint'}>Caliper Paint</Link>
+          <Link className='mb-3' href={'/headlight-taillight'}>Headlight & Taillight</Link>
         </div>
-        <div className='flex flex-col mb-3 md:mr-10'>
-          <h4 className='font-bold'>Enterprise</h4>
-          <Link href={'/team'}>Team</Link>
-          <Link href={''}>Jobs</Link>
-          <Link href={'/blog'}>Blog</Link>
+        <div className='flex flex-col mb-3 md:mr-14'>
+          <h4 className='font-bold mb-3 text-lg'>Enterprise</h4>
+          <Link className='mb-3' href={'/team'}>Team</Link>
+          <Link className='mb-3' href={''}>Jobs</Link>
+          <Link className='mb-3' href={'/blog'}>Blog</Link>
         </div>
-        <div className='flex flex-col mb-3 md:mr-10'>
-          <h4 className='font-bold'>Information</h4>
-          <Link href={''}>FAQs</Link>
-          <Link href={''}>Contact</Link>
-          <Link href={'/blog'}>Privacy</Link>
+        <div className='flex flex-col mb-3 md:mr-14'>
+          <h4 className='font-bold mb-3 text-lg'>Information</h4>
+          <Link className='mb-3' href={''}>FAQs</Link>
+          <Link className='mb-3' href={''}>Contact</Link>
+          <Link className='mb-3' href={'/blog'}>Privacy</Link>
         </div>
       </div>
       <p className='text-center mt-4'>© YourDreamCar 2023</p>
