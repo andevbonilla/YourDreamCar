@@ -38,7 +38,7 @@ export const Footer = () => {
       </div>
       <div className='flex flex-col justify-start mt-8 md:flex-row'>
         <div className='flex flex-col mb-3 md:mr-14'>
-          <h4 className='font-bold mb-3 text-lg'>Services</h4>
+          <h4 className='font-bold mb-3 text-lg'>SERVICES</h4>
           <Link className='mb-3' href={'/decals'}>Decals</Link>
           <Link className='mb-3' href={'/blackout'}>Blackout</Link>
           <Link className='mb-3' href={'/vehicle-wraps'}>Vehicle Wraps</Link>
@@ -47,13 +47,13 @@ export const Footer = () => {
           <Link className='mb-3' href={'/headlight-taillight'}>Headlight & Taillight</Link>
         </div>
         <div className='flex flex-col mb-3 md:mr-14'>
-          <h4 className='font-bold mb-3 text-lg'>Enterprise</h4>
+          <h4 className='font-bold mb-3 text-lg'>ENTERPRISE</h4>
           <Link className='mb-3' href={'/team'}>Team</Link>
           <Link className='mb-3' href={''}>Jobs</Link>
           <Link className='mb-3' href={'/blog'}>Blog</Link>
         </div>
         <div className='flex flex-col mb-3 md:mr-14'>
-          <h4 className='font-bold mb-3 text-lg'>Information</h4>
+          <h4 className='font-bold mb-3 text-lg'>INFORMATION</h4>
           <Link className='mb-3' href={''}>FAQs</Link>
           <Link className='mb-3' href={''}>Contact</Link>
           <Link className='mb-3' href={'/blog'}>Privacy</Link>

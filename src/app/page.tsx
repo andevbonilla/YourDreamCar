@@ -8,6 +8,7 @@ import { About } from '@/components/About'
 // fonts
 import { Josefin_Sans } from '@next/font/google'
 import dynamic from 'next/dynamic'
+import { PopupEventos } from '@/components/PopupEventos'
 const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 
 // dymanic imports
@@ -23,6 +24,7 @@ const Services = dynamic(() => import("@/components/Services"), {
 export default function Home() {
   return (
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl`}>
+      <PopupEventos />
       <section className="bg-image h-screen mb-16 flex justify-start items-end p-[10%]">
         <h1 className='text-5xl font-bold'>Dream like a boy because the reality is here</h1>
       </section>
