@@ -28,57 +28,6 @@ const Service = ({active, name, desc, img}: Props) => {
     setForm(true)
   }
   
-  const sendEmail = (e:FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get('name');
-    const lastname = formData.get('lastname');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
-    const carmodel = formData.get('carmodel');
-    const carmake = formData.get('carmake');
-    const carmade = formData.get('carmade');
-
-    // if (!name || name?.length < 3) {
-    //   console.log("name")
-    //   return;
-    // }
-
-    // if (!lastname || lastname?.length < 3) {
-    //   console.log("lastname")
-    //   return;
-    // }
-
-    // if (!email || email?.length < 5) {
-    //   console.log("email")
-    //   return;
-    // }
-    
-    // if (!phone || phone?.length < 4) {
-    //   console.log("phone")
-    //   return;
-    // }
-
-    // if (!carmodel || carmodel?.length < 3) {
-    //   console.log("carmodel")
-    //   return;
-    // }
-
-    // if (!carmake || carmake?.length < 3) {
-    //   console.log("carmake")
-    //   return;
-    // }
-
-    // if (!carmade || carmade?.length < 3) {
-    //   console.log("carmade")
-    //   return;
-    // }
-    
-    setForm(false)
-
-  }
-
   const closeForm = () => {
     setForm(false)
   }
@@ -87,36 +36,35 @@ const Service = ({active, name, desc, img}: Props) => {
   return (
     <>
       {form && <div className='w-full h-screen fixed top-0 left-0 flex justify-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
-                  <div className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
-                    <div className='flex justify-end'>
-                      <FontAwesomeIcon onClick={closeForm} className='text-3xl' icon={faCircleXmark} />
-                    </div>
-                    <div className='text-xl pb-6'>
-                      <h3 className='underline decoration-[#18debe] underline-offset-8'>Get a Quote!</h3>
-                    </div>
 
-                    <input name='name' className='w-full p-2 mb-4 text-black' type='text' placeholder='First Name*'/>
-                    <input name='lastname' className='w-full p-2 mb-4 text-black' type='text' placeholder='Last Name*'/>
-                    <input name='email' className='w-full p-2 mb-4 text-black' type='email' placeholder='Email Address*'/>
-                    <input name='phone' className='w-full p-2 mb-4 text-black' type='phone' placeholder='Phone Number*'/>
+                  <form action="https://formsubmit.co/contact@yourdreamcar.ca" 
+                        method="POST" 
+                        className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
 
-                    <input name='carmake' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Make*'/>
-                    <input name='carmodel' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Model*'/>
-                    <input name='carmade' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Year Made*'/>
-
-                    <h4 className='pb-4'>The best way of contact you</h4>
-                    <div className='flex mb-4'>
-                      <input className='mx-3 mb-1 text-black' type='checkbox'/>Email
-                      <input className='mx-3 mb-1 text-black' type='checkbox'/>Call
-                      <input className='mx-3 mb-1 text-black' type='checkbox'/>Message
-                    </div>
-                    <textarea className='w-full h-24 p-2 text-black mb-4' placeholder='Message' />
-
-
-                    <form onSubmit={sendEmail}>
+                      <div className='flex justify-end'>
+                        <FontAwesomeIcon onClick={closeForm} className='text-3xl' icon={faCircleXmark} />
+                      </div>
+                      <div className='text-xl pb-6'>
+                        <h3 className='underline decoration-[#18debe] underline-offset-8'>Get a Quote!</h3>
+                      </div>
+                      <input name='name' className='w-full p-2 mb-4 text-black' type='text' placeholder='First Name*'/>
+                      <input name='lastname' className='w-full p-2 mb-4 text-black' type='text' placeholder='Last Name*'/>
+                      <input name='email' className='w-full p-2 mb-4 text-black' type='email' placeholder='Email Address*'/>
+                      <input name='phone' className='w-full p-2 mb-4 text-black' type='phone' placeholder='Phone Number*'/>
+                      <input name='carmake' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Make*'/>
+                      <input name='carmodel' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Model*'/>
+                      <input name='carmade' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Year Made*'/>
+                      <h4 className='pb-4'>The best way of contact you</h4>
+                      <div className='flex mb-4'>
+                        <input className='mx-3 mb-1 text-black' type='checkbox'/>Email
+                        <input className='mx-3 mb-1 text-black' type='checkbox'/>Call
+                        <input className='mx-3 mb-1 text-black' type='checkbox'/>Message
+                      </div>
+                      <textarea name='datails' className='w-full h-24 p-2 text-black mb-4' placeholder='Message' />
                       <button className='bg-[#18debe] text-white px-4 py-1 mb-8'>Submit</button>
-                    </form>
-                  </div>
+
+                  </form>
+
                </div>
       }
       

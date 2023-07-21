@@ -22,19 +22,6 @@ export const PopupEventos = () => {
         setForm(false)
     }
 
-    const sendEmail = (e:FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        
-        const formData = new FormData(e.currentTarget);
-        const name = formData.get('name');
-        const lastname = formData.get('lastname');
-        const email = formData.get('email');
-        const phone = formData.get('phone');
-        const carmodel = formData.get('carmodel');
-        const carmake = formData.get('carmake');
-        const carmade = formData.get('carmade');
-        setForm(false)
-  }
 
   return (
     <>  
@@ -56,12 +43,16 @@ export const PopupEventos = () => {
                             </div>
         }
         {form && <div className='w-full h-screen fixed top-0 left-0 flex justify-center text-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
-                    <div className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
+                    <form action="https://formsubmit.co/contact@yourdreamcar.ca" 
+                          method="POST"
+                          className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
+
                         <div className='flex justify-end'>
-                        <FontAwesomeIcon onClick={closeForm} className='text-3xl' icon={faCircleXmark} />
+                          <FontAwesomeIcon onClick={closeForm} className='text-3xl' icon={faCircleXmark} />
                         </div>
+
                         <div className='text-xl pb-6'>
-                        <h3 className='underline decoration-[#18debe] underline-offset-8'>Race Wars Toronto</h3>
+                          <h3 className='underline decoration-[#18debe] underline-offset-8'>Race Wars Toronto</h3>
                         </div>
 
                         <input name='name' className='w-full p-2 mb-4 text-black' type='text' placeholder='First Name*'/>
@@ -75,17 +66,14 @@ export const PopupEventos = () => {
 
                         <h4 className='pb-4'>The best way of contact you</h4>
                         <div className='flex mb-4'>
-                        <input className='mx-3 mb-1 text-black' type='checkbox'/>Email
-                        <input className='mx-3 mb-1 text-black' type='checkbox'/>Call
-                        <input className='mx-3 mb-1 text-black' type='checkbox'/>Message
+                            <input className='mx-3 mb-1 text-black' type='checkbox'/>Email
+                            <input className='mx-3 mb-1 text-black' type='checkbox'/>Call
+                            <input className='mx-3 mb-1 text-black' type='checkbox'/>Message
                         </div>
-                        <textarea className='w-full h-24 p-2 text-black mb-4' placeholder='Message' />
+                        <textarea name='details' className='w-full h-24 p-2 text-black mb-4' placeholder='Message' />
 
-
-                        <form onSubmit={sendEmail}>
                         <button className='bg-[#18debe] text-white px-4 py-1 mb-8'>Submit</button>
-                        </form>
-                    </div>
+                    </form>
         </div>
         }
     </>
