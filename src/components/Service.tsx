@@ -64,6 +64,7 @@ const Service = ({active, name, desc, img}: Props) => {
 
                       <input type='hidden' name='_replyto' value={"Thank you, your quote was received!. Soon #YourDreamCar"}/>
                       <input type='hidden' name='_next' value={"https://yourdreamcar.ca"}/>
+                      <input type='hidden' name='_captcha' value={"false"}/>
 
                       <button className='bg-[#18debe] text-white px-4 py-1 mb-8'>Submit</button>
 

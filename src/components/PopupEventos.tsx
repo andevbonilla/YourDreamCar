@@ -66,6 +66,7 @@ export const PopupEventos = () => {
 
                         <input type='hidden' name='_replyto' value={"Thank you, your quote was received!. Enjoy the Race Wars Toronto and Soon #YourDreamCar"}/>
                         <input type='hidden' name='_next' value={"https://yourdreamcar.ca"}/>
+                        <input type='hidden' name='_captcha' value={"false"}/>
 
                         <h4 className='pb-4'>The best way of contact you</h4>
                         <div className='flex mb-4'>
