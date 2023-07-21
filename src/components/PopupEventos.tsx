@@ -2,7 +2,7 @@
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import React, { FormEvent, useState } from 'react'
+import React, { useState } from 'react'
 
 export const PopupEventos = () => {
 
@@ -63,6 +63,9 @@ export const PopupEventos = () => {
                         <input name='carmake' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Make*'/>
                         <input name='carmodel' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Car Model*'/>
                         <input name='carmade' className='w-full px-2 py-2 mb-4 text-black' type='text' placeholder='Year Made*'/>
+
+                        <input type='hidden' name='_replyto' value={"Thank you, your quote was received!. Enjoy the Race Wars Toronto and Soon #YourDreamCar"}/>
+                        <input type='hidden' name='_next' value={"https://yourdreamcar.ca"}/>
 
                         <h4 className='pb-4'>The best way of contact you</h4>
                         <div className='flex mb-4'>

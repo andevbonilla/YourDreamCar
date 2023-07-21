@@ -61,6 +61,10 @@ const Service = ({active, name, desc, img}: Props) => {
                         <input className='mx-3 mb-1 text-black' type='checkbox'/>Message
                       </div>
                       <textarea name='datails' className='w-full h-24 p-2 text-black mb-4' placeholder='Message' />
+
+                      <input type='hidden' name='_replyto' value={"Thank you, your quote was received!. Soon #YourDreamCar"}/>
+                      <input type='hidden' name='_next' value={"https://yourdreamcar.ca"}/>
+
                       <button className='bg-[#18debe] text-white px-4 py-1 mb-8'>Submit</button>
 
                   </form>
