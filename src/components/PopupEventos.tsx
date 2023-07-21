@@ -40,11 +40,11 @@ export const PopupEventos = () => {
     <>  
         {
             presentation && <div className='w-full h-screen fixed top-0 left-0 flex justify-center items-center text-center bg-black bg-opacity-70 z-40 text-base'>
-                                <div className='sm:w-[65%] md:w-[65%] lg:w-[45%] w-[90%] fixed bg-black z-40 p-12'>
-                                    <div className='flex justify-end'>
-                                        <FontAwesomeIcon onClick={closePopup} className='text-3xl' icon={faCircleXmark} />
+                                <div className='flex flex-col justify-center items-center sm:w-[65%] md:w-[65%] lg:w-[45%] w-[90%] fixed bg-black z-40 p-12'>
+                                    <div className='flex'>
+                                        <FontAwesomeIcon onClick={closePopup} className='text-3xl cursor-pointer' icon={faCircleXmark} />
                                     </div>
-                                    <Image 
+                                    <Image
                                         src={"/event-img.jpg"}
                                         width={600}
                                         height={600}

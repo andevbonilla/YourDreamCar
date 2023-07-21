@@ -1,6 +1,7 @@
 "use client"
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 import { FormEvent, useEffect, useState } from 'react'
 
 interface Props {
@@ -131,6 +132,11 @@ const Service = ({active, name, desc, img}: Props) => {
           active && (
             <div className='fade-in-animation'>
               <p className='pb-4'>{desc}</p>
+              <Link   href={`${(name.includes('&')) ? name.toLowerCase().replaceAll(' ','-').replace('&', '').replace('-', '') 
+                                                    : name.toLowerCase().replaceAll(' ','-')}`}
+                      className='mr-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black duration-300 text-base font-bold border border-white px-4 py-2'>
+                        More Info
+              </Link>
               <button onClick={openForm} 
                       className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black duration-300 text-base font-bold border border-white px-2 py-1'>
                         Get a Quote

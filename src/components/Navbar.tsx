@@ -64,22 +64,22 @@ export const Navbar = () => {
                           <Link onClick={closeMenu} 
                                 className={`text-white pb-8 font-bold text-xl underline decoration-[#18debe] underline-offset-8`} 
                                 href={'/'}>
-                                Home
+                                HOME
                           </Link>
                           <Link onClick={closeMenu} 
                                 className={`text-white pb-8 font-bold text-xl underline decoration-[#18debe] underline-offset-8`} 
                                 href={'/blog'}>
-                                Blog
+                                BLOG
                           </Link>
                           <Link onClick={closeMenu} 
                                 className={`text-white pb-8 font-bold text-xl underline decoration-[#18debe] underline-offset-8`} 
                                 href={'/team'}>
-                                Team
+                                TEAM
                           </Link>
                           <Link onClick={closeMenu} 
                                 className={`text-white pb-8 font-bold text-xl underline decoration-[#18debe] underline-offset-8`} 
                                 href={'/personalize-yourdreamcar-online'}>
-                                Online Personalization
+                                ONLINE PERSONALIZATION
                           </Link>
                         </div>
                    </div>
