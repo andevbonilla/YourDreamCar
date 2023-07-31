@@ -4,7 +4,7 @@ const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 const DecalsPage = () => {
   return (
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl px-[10%]`}>
-      <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>Decals</h1>
+      <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>DECALS</h1>
       <p className='pb-4'>
          If you&apos;re looking to add a distinctive and personalized element to your car, 
          our decorative decals are the perfect choice. Whether you want to showcase your passion for your favorite anime character, 

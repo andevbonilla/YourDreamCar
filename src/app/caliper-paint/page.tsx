@@ -4,7 +4,7 @@ const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 const CaliperPage = () => {
   return (
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl px-[10%]`}>
-      <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>Caliper Painting</h1>
+      <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>CALIPER PAINTING</h1>
       <p className='pb-4'>
          If you&apos;re looking to add a touch of style and personality to your brakes, 
          our caliper painting service is the perfect choice. Our team of experts will paint your brake 

@@ -4,7 +4,7 @@ const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 const InteriorWrapPage = () => {
   return (
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl px-[10%]`}>
-      <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>Interior Wrap</h1>
+      <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>INTERIOR WRAPS</h1>
       <p className='pb-4'>
          Give your car&apos;s interior a fresh new look with our Interior Wrap service. 
          From customized accents to complete color changes, we can transform your interior space with top-quality 

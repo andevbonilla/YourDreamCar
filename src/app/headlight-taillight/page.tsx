@@ -4,7 +4,7 @@ const josefin = Josefin_Sans({ subsets: ['latin'], weight: '400' })
 const HeadlightTaillightPage = () => {
   return (
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl px-[10%]`}>
-      <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>Headlight & Taillight Tinting</h1>
+      <h1 className='pb-4 pt-48 font-bold text-xl underline decoration-[#18debe] underline-offset-8'>HEADLIGHT & TAILIGHT</h1>
       <p className='pb-4'>
          Add a touch of style and mystery to your vehicle&apos;s headlights and taillights with our tinting service. 
          Our team uses high-quality films that not only enhance the appearance but also provide protection against 

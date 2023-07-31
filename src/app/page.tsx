@@ -26,7 +26,7 @@ export default function Home() {
     <main className={`${josefin.className} bg-black text-white text-opacity-85 md:text-xl`}>
       {/* <PopupEventos /> */}
       <section className="bg-image h-screen mb-16 flex justify-start items-end p-[10%]">
-        <h1 className='text-5xl font-bold'>Dream like a boy because the reality is here</h1>
+        <h1 className='text-4xl font-bold'>DREAM lIKE A BOY BECAUSE THE REALITY IS HERE.</h1>
       </section>
       {/* about section */}
       <section className='md:px-32 md:pb-16 flex flex-col items-center text-center px-8 pb-12'>
