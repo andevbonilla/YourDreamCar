@@ -8,7 +8,7 @@ const BlogHome = () => {
   return (
     <main className={`${josefin.className} md:px-[25%] flex flex-col bg-black text-white text-opacity-85 md:text-xl px-10 text-center h-full`}>
       
-      <h2 className='pt-48 pb-8 text-xl font-bold'>Lastest Posts</h2>
+      <h2 className='pt-48 pb-12 text-xl font-bold underline decoration-[#18debe] underline-offset-8'>LASTEST POSTS</h2>
 
       <BlogArticle title='Top Car Wrap Trends' 
                    img='/bmw-wrapped-min.png' 

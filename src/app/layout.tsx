@@ -25,7 +25,7 @@ export default function RootLayout({
           {children}
           {/* footer section */}
           <footer className='md:px-32 md:pb-16 flex flex-col px-8 pt-12 pb-12 bg-black text-white'>
-            <h2 className={`text-center font-bold text-2xl pb-12 underline decoration-[#18debe] underline-offset-8`}>Social Media</h2>
+            <h2 className={`text-center font-bold text-2xl pb-12 underline decoration-[#18debe] underline-offset-8`}>SOCIAL MEDIA</h2>
             <Footer />
           </footer>
       </body>
