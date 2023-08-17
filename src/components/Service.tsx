@@ -2,7 +2,7 @@
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
-import { FormEvent, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 interface Props {
   active: boolean,
@@ -14,7 +14,7 @@ interface Props {
 const Service = ({active, name, desc, img}: Props) => {
 
   const [gradient, setGradient] = useState('linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))')
-  const [form, setForm] = useState(false)
+  const [formActive, setForm] = useState(false)
 
   useEffect(() => {
     if (active) {
@@ -35,11 +35,9 @@ const Service = ({active, name, desc, img}: Props) => {
 
   return (
     <>
-      {form && <div className='w-full h-screen fixed top-0 left-0 flex justify-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
+      {formActive && <div className='w-full h-screen fixed top-0 left-0 flex justify-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
 
-                  <form action="https://formsubmit.co/contact@yourdreamcar.ca" 
-                        method="POST" 
-                        className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
+                  <form className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
 
                       <div className='flex justify-end'>
                         <FontAwesomeIcon onClick={closeForm} className='text-3xl' icon={faCircleXmark} />

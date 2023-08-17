@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 
 export const PopupEventos = () => {
 
-    const [form, setForm] = useState(false)
+    const [formActive, setForm] = useState(false)
     const [presentation, setPresentation] = useState(true)
 
     const applyDiscount = () => {
@@ -42,10 +42,8 @@ export const PopupEventos = () => {
                                 </div>
                             </div>
         }
-        {form && <div className='w-full h-screen fixed top-0 left-0 flex justify-center text-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
-                    <form action="https://formsubmit.co/contact@yourdreamcar.ca" 
-                          method="POST"
-                          className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
+        {formActive && <div className='w-full h-screen fixed top-0 left-0 flex justify-center text-center bg-black bg-opacity-70 z-40 pt-10 text-base'>
+                    <form className='sm:w-[50%] md:w-[50%] lg:w-[30%] w-[90%] h-full fixed bg-black z-40 p-8 overflow-y-scroll'>
 
                         <div className='flex justify-end'>
                           <FontAwesomeIcon onClick={closeForm} className='text-3xl' icon={faCircleXmark} />
