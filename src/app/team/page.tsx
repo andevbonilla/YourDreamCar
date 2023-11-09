@@ -38,7 +38,7 @@ const teamPage = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-end text-justify text-base'>
-              David Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime, sequi beatae ex, natus illo expedita fugit quasi
+              Hello, I&apos;m David, the general director of YourDreamCar. I have a lot of experience in car tuning and I will take care of your #yourdreamcar
             </div>
 
           </div>
@@ -59,7 +59,7 @@ const teamPage = () => {
                   CTO
                 </p>
                 <div className='pb-4'>
-                  <Link href={'https://www.instagram.com/a.n.d.r.e.b/'} target='_blank'> 
+                  <Link href={'https://www.instagram.com/__andrec__/'} target='_blank'> 
                     <FontAwesomeIcon className='cursor-pointer text-2xl pr-4' icon={faInstagram} />
                   </Link>
                   <Link href={'https://www.linkedin.com/in/andres-bonilla-685983189/'} target='_blank'> 
@@ -72,7 +72,7 @@ const teamPage = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-end text-justify text-base'>
-              Andres Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime, sequi beatae ex, natus illo expedita fugit quasi
+              Hello, I&apos;m Andres, the technology director. I love technology and cars, don&apos;t hesitate to turn your car into #yourdreamcar
             </div>
 
           </div>
