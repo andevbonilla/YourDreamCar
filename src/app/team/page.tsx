@@ -12,7 +12,7 @@ const teamPage = () => {
         <div className='flex flex-col items-center pb-8 text-start md:flex-row md:items-center md:justify-center max-w-3xl mt-24'>
           <img 
                 className='md:mr-10 md:pb-0 rounded-full h-[12rem] w-[12rem]'
-                src={'/avendano-img.png'} 
+                src={'/avendano-img.jpg'} 
                 alt='image of David Avendano' 
           />
           
