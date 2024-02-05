@@ -65,7 +65,7 @@ const teamPage = () => {
               <Link href={'https://www.linkedin.com/in/andevbonilla/'} target='_blank'>
                 <FontAwesomeIcon className='cursor-pointer text-2xl pr-4' icon={faLinkedin} />
               </Link>
-              <Link href={'https://twitter.com/AndresB64566284'} target='_blank'>
+              <Link href={'https://twitter.com/andevbonilla'} target='_blank'>
                 <FontAwesomeIcon className='cursor-pointer text-2xl pr-4' icon={faTwitter} />
               </Link>
             </div>
